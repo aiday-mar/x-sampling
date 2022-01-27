@@ -1,0 +1,43 @@
+{
+  "name": "ml-x-sampling",
+  "version": "0.0.0",
+  "description": "Package used to sample elements in an array or create samples from starting to ending point using a certain distribution",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "eslint": "eslint src",
+    "eslint-fix": "npm run eslint -- --fix",
+    "prepack": "rollup -c",
+    "prettier": "prettier --check src",
+    "prettier-write": "prettier --write src",
+    "test": "npm run test-only && npm run eslint && npm run prettier",
+    "test-only": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mljs/x-sampling.git"
+  },
+  "keywords": [],
+  "author": "Aiday Marlen Kyzy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mljs/x-sampling/issues"
+  },
+  "homepage": "https://github.com/mljs/x-sampling#readme",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
+    "@types/jest": "^27.4.0",
+    "eslint": "^8.7.0",
+    "eslint-config-cheminfo": "^7.2.2",
+    "jest": "^27.4.7",
+    "prettier": "^2.5.1",
+    "rollup": "^2.66.0"
+  }
+}
